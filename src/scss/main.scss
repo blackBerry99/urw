@@ -1,0 +1,117 @@
+body{
+  font-family: 'Manrope';
+  color: #ffffff;
+}
+
+$brand-color: #A21ED8;
+
+.container{
+  width: 1320px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.nav{
+  margin-left: auto;
+  display: flex;
+  &__item{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 3;
+    padding-top: 47px;
+    position: relative;
+
+    &:hover, &--active{
+      cursor: pointer;
+      &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 16px;
+        height: 3px;
+        background: $brand-color;
+      }
+    }
+    &:not(:last-child){
+      margin-right: 11px;
+    }
+  }
+}
+.lang{
+  display: flex;
+  border-left: 1px solid rgba(226, 156, 255, 0.3);
+  padding-left: 28px;
+  margin-left: 28px;
+  position: relative;
+  &:before{
+    content: '';
+    width: 1px;
+    height: 41px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  &__item{
+    cursor: pointer;
+    font-size: 14px;
+    line-height:2.8;
+    font-weight: 700;
+    opacity: 0.5;
+    position: relative;
+    padding-top: 47px;
+    &--active{
+      opacity: 1;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 16px;
+        height: 3px;
+        background: $brand-color;
+      }
+    }
+  }
+}
+.main{
+  position: relative;
+  width: 100%;
+  background-image: url(../../../src/images/main.png);
+  background-position: bottom 0 right 0;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 48%;
+  right: 0;
+  min-height: 100vh;
+  z-index: -2;
+
+  &__container{
+    z-index: 1;
+  }
+  &__image{
+    position: absolute;
+    width: 100%;
+    background-image: url(../../../src/images/Union.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 62%;
+    z-index: -1;
+  }
+  &__bg-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

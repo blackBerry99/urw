@@ -1,0 +1,94 @@
+@media only screen and (max-width: 1900px) {
+  .container{
+    width: 1000px;
+  }
+  .main{
+    &__image--witcher{
+      height: 80%;
+    }
+    &__content{
+      padding-top: 100px;
+      margin-right: 0;
+    }
+    &__title{
+      font-size: 160px;
+    }
+    &__subtitle{
+      font-size: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .container{
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container{
+    width: 768px;
+  }
+  .main{
+    &__image--witcher{
+      display: none;
+    }
+    &__content{
+      margin: 0 auto;
+      padding-top: 270px;
+    }
+    &__title{
+      font-size: 160px;
+    }
+    &__subtitle{
+      font-size: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    width: 296px;
+  }
+  .btn{
+    width: 180px;
+    font-size: 16px;
+    padding: 12px;
+  }
+  .main{
+    &__container{
+      margin: auto;
+    }
+    &__content{
+      padding-top: 0;
+    }
+    &__title{
+      font-size: 60px;
+    }
+    &__subtitle{
+      font-size: 40px;
+    }
+    &__code{
+      width: auto;
+      &-text {
+        width: 120px;
+      }
+      &-btn {
+        width: 140px;
+      }
+      &-input{
+        width: 120px;
+        font-size: 16px;
+      }
+    }
+ &__footer{
+   &-logo svg{
+     width: 100px;
+   }
+   &-container{
+     flex-direction: column;
+     align-items: center;
+   }
+ }
+  }
+}
