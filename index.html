@@ -9,44 +9,90 @@
     <title>Document</title>
 </head>
 <body>
-<section class="main">
-    <div class="main__image"></div>
-    <div class="container main__container">
-        <div class="header">
-            <img src="src/images/Logo.svg" alt="" class="logo">
-            <div class="nav">
-                <div class="nav__item nav__item--active">Про нагороду</div>
-                <div class="nav__item">номінації</div>
-                <div class="nav__item">Журі</div>
-                <div class="nav__item">Правила</div>
-                <div class="nav__item">Учасники</div>
-                <div class="nav__item">Галерея</div>
-                <div class="nav__item">Партнери</div>
-                <div class="nav__item">Зворотній зв`язок</div>
-            </div>
-            <div class="lang">
-                <div class="lang__item lang__item--active">En</div>
-                <div class="lang__item">Ua</div>
-            </div>
+<div class="puzzle">
+    <div class="puzzle__grid">
+        <div class="puzzle__grid-row">
+            <div id="cell1" class="puzzle__grid-col"></div>
+            <div id="cell2" class="puzzle__grid-col"></div>
+            <div id="cell3" class="puzzle__grid-col"></div>
         </div>
-        <div class="main__title">Ukrainian IT Awards 2020</div>
-        <div class="main__info">
-            <div class="main__info-item">
-                <div class="main__info-title"></div>
-                <div class="main__info-data"></div>
-            </div>
-            <div class="main__info-item">
-                <div class="main__info-title"></div>
-                <div class="main__info-data"></div>
-            </div>
-            <div class="main__controls">
-                <button class="btn btn--brand"></button>
-                <button class="btn btn--secondary"></button>
-            </div>
+        <div class="puzzle__grid-row">
+            <div id="cell4" class="puzzle__grid-col"></div>
+            <div id="cell5" class="puzzle__grid-col"></div>
+            <div  id="cell6" class="puzzle__grid-col"></div>
+        </div>
+        <div class="puzzle__grid-row">
+            <div id="cell7" class="puzzle__grid-col"></div>
+            <div id="cell8" class="puzzle__grid-col"></div>
+            <div id="cell9" class="puzzle__grid-col"></div>
         </div>
     </div>
-</section>
-<section class="people"></section>
-<script src="build/js/script.js"></script>
+</div>
+<div id="images" class="puzzle__grid puzzle__grid--row">
+    <div class="puzzle__subtitle">
+        Get puzzle from here
+    </div>
+<div class="puzzle__grid-images">
+    <div class="puzzle__grid-row">
+        <div id="" class="puzzle__grid-col">
+            <img id="image_part_001" draggable="true" src="src/images/image_part_001.jpg">
+        </div>
+        <div id="" class="puzzle__grid-col">
+            <img id="image_part_002" draggable="true" src="src/images/image_part_002.jpg">
+
+        </div>
+        <div id="" class="puzzle__grid-col ">
+            <img id="image_part_003" draggable="true" src="src/images/image_part_003.jpg">
+
+        </div>
+
+    </div>
+    <div class="puzzle__grid-row">
+        <div id="" class="puzzle__grid-col">
+            <img id="image_part_004" draggable="true" src="src/images/image_part_004.jpg">
+
+        </div>
+        <div id="" class="puzzle__grid-col">
+            <img id="image_part_005" draggable="true" src="src/images/image_part_005.jpg">
+
+        </div>
+        <div  id="" class="puzzle__grid-col">
+            <img id="image_part_006" draggable="true" src="src/images/image_part_006.jpg">
+
+        </div>
+    </div>
+    <div class="puzzle__grid-row">
+
+        <div id="" class="puzzle__grid-col">
+            <img id="image_part_007" draggable="true" src="src/images/image_part_007.jpg">
+
+        </div>
+        <div id="" class="puzzle__grid-col">
+            <img id="image_part_008" draggable="true" src="src/images/image_part_008.jpg">
+
+        </div>
+        <div id="" class="puzzle__grid-col">
+            <img id="image_part_009" draggable="true" src="src/images/image_part_009.jpg">
+
+        </div>
+    </div>
+</div>
+
+</div>
+<button onclick="randomize()">random</button>
+<div id="alert" class="puzzle__alert">
+    <div class="puzzle__alert-content">
+        <div class="puzzle__alert-title">
+            Congratulations!
+        </div>
+        <div class="puzzle__alert-subtitle">
+            Your time is:
+        </div>
+        <div id="yourTime" class="puzzle__alert-subtitle">
+        </div>
+    </div>
+</div>
+
+<script src="src/js/main.js"></script>
 </body>
 </html>
