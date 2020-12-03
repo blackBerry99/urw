@@ -1,5 +1,5 @@
 # test-project
 
 
-інсталювати модулі командою npm i
-для запуску - gulp dev
+npm i - for modules install
+gulp dev - for start
