@@ -1,18 +1,21 @@
 
+let showAlert = document.querySelector('#js-alert');
+let yourTime = document.querySelector('#js-yourTime');
 
-    const dragstart = function(event) {
+const dragstart = function(event) {
         event.dataTransfer.setData("text", event.target.id);
     };
-    const dragover = function(event) {
+const dragover = function(event) {
         if(event.target.nodeName.toLowerCase() === "img") {
             return true;
         }
         event.preventDefault();
-    }
-    const drop = function(event) {
+    };
+const drop = function(event) {
         event.preventDefault();
         let imageId = event.dataTransfer.getData("text");
         event.target.appendChild(document.getElementById(imageId));
+
         let cell1 = document.querySelector('#cell1');
         let img1 = document.querySelector('#image_part_001');
 
@@ -42,15 +45,13 @@
 
         let contains = cell1.contains(img1) && cell2.contains(img2) && cell3.contains(img3) && cell4.contains(img4) && cell5.contains(img5) && cell6.contains(img6) && cell7.contains(img7) && cell8.contains(img8)  && cell9.contains(img9);
 
-        let alert = document.querySelector('#alert');
-        let yourTime = document.querySelector('#yourTime');
         if (contains) {
-            alert.style.display = "flex";
+            showAlert.style.display = "flex";
             yourTime.textContent = time.textContent;
         }
     };
 
-    const cells = document.getElementsByClassName("puzzle__grid-col");
+const cells = document.getElementsByClassName("puzzle__grid-col");
     Array.from(cells).forEach((element) => {
         element.addEventListener('dragover',dragover);
         element.addEventListener('drop',drop);
@@ -67,7 +68,7 @@
     let t;
 
     function randomize() {
-        var images = document.getElementById("images");
+        var images = document.getElementById("js-images");
         images.classList.add("puzzle__grid--randomized");
         function add() {
             seconds++;
@@ -90,4 +91,7 @@
             clearTimeout(t);
             return time.textContent;
         }
+    }
+    function closeAlert() {
+        showAlert.style.display = "none";
     }

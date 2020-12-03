@@ -1,2 +1,31 @@
+@media only screen and (max-width: 1199px) {
+  .container {
+    width: 768px; }
+  .puzzle__grid--randomized .puzzle__grid-row:nth-child(1) {
+    order: 1; }
+  .puzzle__grid--randomized .puzzle__grid-images {
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 296px; }
+  .puzzle__grid {
+    width: 296px;
+    height: 296px; }
+    .puzzle__grid--row {
+      height: 296px; }
+      .puzzle__grid--row .puzzle__grid-col {
+        border: none; }
+        .puzzle__grid--row .puzzle__grid-col img {
+          width: 98px;
+          height: 98px; }
+    .puzzle__grid-col {
+      width: 98px; }
+    .puzzle__grid-row {
+      height: 98px; }
+    .puzzle__grid img {
+      width: 96px;
+      height: 96px; } }
 
 /*# sourceMappingURL=media.css.map */

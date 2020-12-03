@@ -1,5 +1,5 @@
 .container {
-  width: 1320px;
+  width: 1354px;
   margin: 0 auto; }
 
 body {
@@ -97,6 +97,7 @@ button {
     flex-direction: column;
     background-color: white;
     width: 300px;
+    height: fit-content;
     padding: 40px;
     text-align: center;
     position: absolute;

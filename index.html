@@ -28,7 +28,7 @@
                 <div id="cell9" class="puzzle__grid-col"></div>
             </div>
         </div>
-        <div id="images" class="puzzle__grid puzzle__grid--row">
+        <div id="js-images" class="puzzle__grid puzzle__grid--row">
             <div class="puzzle__subtitle">
                 Get puzzle from here
             </div>
@@ -79,7 +79,7 @@
             </div>
             <button class="puzzle__btn" onclick="randomize()">random</button>
         </div>
-        <div id="alert" class="puzzle__alert">
+        <div id="js-alert" class="puzzle__alert">
             <div class="puzzle__alert-content">
                 <div class="puzzle__alert-title">
                     Congratulations!
@@ -87,8 +87,10 @@
                 <div class="puzzle__alert-subtitle">
                     Your time is:
                 </div>
-                <div id="yourTime" class="puzzle__alert-subtitle">
+                <div id="js-yourTime" class="puzzle__alert-subtitle">
                 </div>
+                <button id="js-closeAlert" onclick="closeAlert()" class="">Thanks!
+                </button>
             </div>
         </div>
     </div>
