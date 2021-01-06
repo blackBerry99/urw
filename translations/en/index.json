@@ -1,0 +1,21 @@
+{
+  "categoryName": {
+    "CreativeBaseOnDevice": "Creative based on Device",
+    "c2c/leads": "c2c/leads",
+    "fifty": "fifty",
+    "gallery": "gallery",
+    "games": "games",
+    "gyro": "gyro",
+    "panorama": "panorama",
+    "pinch": "pinch",
+    "scratch": "scratch",
+    "selectOptions": "select options",
+    "shake": "shake",
+    "stroy": "stroy",
+    "survey": "survey",
+    "swipe/move": "swipe/move",
+    "touch/Click": "touch/Click",
+    "video": "Video",
+    "vr": "vr"
+  }
+}

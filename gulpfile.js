@@ -37,7 +37,7 @@ const cssFiles = [
 ]
 
 const jsFiles = [
-    './src/js/lib.js',
+    './src/js/slick.js',
     './src/js/main.js',
 ]
 

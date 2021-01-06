@@ -1,76 +1,124 @@
-let showAlert = document.querySelector('#js-alert');
-let yourTime = document.querySelector('#js-yourTime');
+let productList = document.getElementById("js-product-wrapper");
+var demonstration = {
+    category: [
+        {
+            cName: "swipe/move",
+            subCategory: [
+                {
+                subCName: "tinder",
+                subCLinks: [
+                    {
+                    linkName: "Emek",
+                    link: "https://adsil1.com/tools/demonstrations/emek/0917/index.html",
+                },
+                    {
+                        linkName: "swipe Game Cellcom",
+                        link: "https://adsil1.com/tools/demonstration/cellcom/swipe_game/1018/index.html",
+                    },
+                ]
+            },
+            {
+                subCName: "up down",
+                subCLinks: [{
+                    linkName: "XL",
+                    link: "https://adsil1.com/tools/demonstration/XL/1905/live/index.html",
 
-const dragstart = function(event) {
-        event.dataTransfer.setData("text", event.target.id);
-    };
-const dragover = function(event) {
-        if(event.target.nodeName.toLowerCase() === "img") {
-            return true;
-        }
-        event.preventDefault();
-    };
+                },
+                    {
+                        linkName: "Azorim",
+                        link: "http://adsil1.com/tools/demonstration/azorim/0518/index.html",
 
-const drop = function(event) {
-    event.preventDefault();
-    let imageId = event.dataTransfer.getData("text");
-    event.target.appendChild(document.getElementById(imageId));
-    let puzzle = []
-    let puzzleCount = document.querySelectorAll('#js-puzzle .js-puzzle__item').length
-    for (let i = 0; i < puzzleCount; i++) {
-        puzzle.push({
-            cell: document.querySelector(`#cell${i + 1}`),
-            image: document.querySelector(`#image_part_00${i + 1}`)
-        })
-    }
+                    },
 
-    if (puzzle.every(p => p.cell.contains(p.image))) {
-        showAlert.style.display = "flex";
-        yourTime.textContent = time.textContent;
-    }
-};
+                ],
 
-const cells = document.getElementsByClassName("puzzle__grid-col");
-    Array.from(cells).forEach((element) => {
-        element.addEventListener('dragover',dragover);
-        element.addEventListener('drop',drop);
-    });
+            },
+            {
+                subCName: "moveElement",
+                subCLinks: [{
+                    linkName: "BOX",
+                    link: "http://adsil1.com/tools/demonstration/hashmalBox122016/index.html",
 
-    const images = document.getElementsByTagName("img");
-    Array.from(images).forEach((element) => {
-        element.addEventListener('dragstart',dragstart);
-    });
+                },
+                    {
+                        linkName: "Yoplait",
+                        link: "http://adsil1.com/tools/demonstration/yopllait/index.html",
 
-    let time = [0];
-    let stop;
-    let seconds = 0, minutes = 0, hours = 0;
-    let t;
+                    },
 
-    function randomize() {
-        var images = document.getElementById("js-images");
-        images.classList.add("puzzle__grid--randomized");
-        function add() {
-            seconds++;
-            if (seconds >= 60) {
-                seconds = 0;
-                minutes++;
-                if (minutes >= 60) {
-                    minutes = 0;
-                    hours++;
-                }
-            }
-            time.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
-            timer();
-        }
-        function timer() {
-            t = setTimeout(add, 1000);
-        }
-        timer();
-        stop = function() {
-            clearTimeout(t);
-            return time.textContent;
-        }
-    }
-    function closeAlert() {
-        showAlert.style.display = "none";
-    }
+                ],
+            },
+            {
+                subCName: "ninja",
+                subCLinks: [{
+                    linkName: "fruit NINJA",
+                    link: "http://adsil1.com/tools/demonstration/fruit/index.html",
+
+                },
+
+
+                ],
+            },
+        ],
+
+    },
+
+        {
+            cName: "video",
+            subCategory: [{
+                subCName: "tinder",
+                subCLinks: [{
+                    linkName: "Emek",
+                    link: "https://adsil1.com/tools/demonstrations/emek/0917/index.html",
+
+                },
+                    {
+                        linkName: "swipe Game Cellcom",
+                        link: "https://adsil1.com/tools/demonstration/cellcom/swipe_game/1018/index.html",
+
+                    },
+
+                ]
+            }],
+        },
+
+        {
+            cName: "fifty",
+        },
+
+        {
+            cName: "games",
+        },
+
+        {
+            cName: "touch/click",
+        },
+    ]
+}
+
+let categoryItem = ''
+demonstration.category.forEach((c) => {
+    categoryItem += `<div class="category__item" id="js-openCategory" onclick="openCategory()">
+                    <div class="category__title">${c.cName}</div>
+                    <div class="category__sub">
+                        <div class="category__sub-item"></div>
+                    </div>
+                </div>`
+
+});
+document.getElementById('js-category-list').innerHTML = categoryItem;
+
+
+// let productItem = ''
+// demonstration.category.subCategory.forEach((subC) => {
+//     productItem += `<div class="product__item">
+//                 <div class="product__item-title">${subC.subCName}</div>
+// <!--                <img src="" alt="" class="product__item-banner">-->
+//             </div>`
+//
+// });
+// document.getElementById('js-product-list').innerHTML = productItem;
+//
+function openCategory() {
+    productList.style.display = "block";
+}

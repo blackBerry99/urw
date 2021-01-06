@@ -5,98 +5,42 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="build/css/style.css">
     <title>Document</title>
 </head>
 <body>
 <div class="container">
-    <div class="puzzle">
-        <div id="js-puzzle" class="puzzle__grid">
-            <div class="puzzle__grid-row">
-                <div id="cell1" class="puzzle__grid-col js-puzzle__item"></div>
-                <div id="cell2" class="puzzle__grid-col js-puzzle__item"></div>
-                <div id="cell3" class="puzzle__grid-col js-puzzle__item"></div>
-            </div>
-            <div class="puzzle__grid-row">
-                <div id="cell4" class="puzzle__grid-col js-puzzle__item"></div>
-                <div id="cell5" class="puzzle__grid-col js-puzzle__item"></div>
-                <div  id="cell6" class="puzzle__grid-col js-puzzle__item"></div>
-            </div>
-            <div class="puzzle__grid-row">
-                <div id="cell7" class="puzzle__grid-col js-puzzle__item"></div>
-                <div id="cell8" class="puzzle__grid-col js-puzzle__item"></div>
-                <div id="cell9" class="puzzle__grid-col js-puzzle__item"></div>
-            </div>
-        </div>
-        <div id="js-images" class="puzzle__grid puzzle__grid--row">
-            <div class="puzzle__subtitle">
-                Get puzzle from here
-            </div>
-            <div class="puzzle__grid-images">
-                <div class="puzzle__grid-row">
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_001" draggable="true" src="src/images/image_part_001.jpg">
-                    </div>
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_002" draggable="true" src="src/images/image_part_002.jpg">
-
-                    </div>
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_003" draggable="true" src="src/images/image_part_003.jpg">
-
-                    </div>
-
-                </div>
-                <div class="puzzle__grid-row">
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_004" draggable="true" src="src/images/image_part_004.jpg">
-
-                    </div>
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_005" draggable="true" src="src/images/image_part_005.jpg">
-
-                    </div>
-                    <div  id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_006" draggable="true" src="src/images/image_part_006.jpg">
-
-                    </div>
-                </div>
-                <div class="puzzle__grid-row">
-
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_007" draggable="true" src="src/images/image_part_007.jpg">
-
-                    </div>
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_008" draggable="true" src="src/images/image_part_008.jpg">
-
-                    </div>
-                    <div id="" class="puzzle__grid-col js-puzzle__item">
-                        <img id="image_part_009" draggable="true" src="src/images/image_part_009.jpg">
-
-                    </div>
-                </div>
-            </div>
-            <button class="puzzle__btn" onclick="randomize()">random</button>
-        </div>
-        <div id="js-alert" class="puzzle__alert">
-            <div class="puzzle__alert-content">
-                <div class="puzzle__alert-title">
-                    Congratulations!
-                </div>
-                <div class="puzzle__alert-subtitle">
-                    Your time is:
-                </div>
-                <div id="js-yourTime" class="puzzle__alert-subtitle">
-                </div>
-                <button id="js-closeAlert" onclick="closeAlert()" class="">Thanks!
-                </button>
+    <div class="category__list" id="js-category-list"></div>
+    <div class="product__wrapper" id="js-product-wrapper">
+        <div class="product__list" id="js-product-list">
+            <div class="product__item">
+                <div class="product__item-title"></div>
+                <div class="product__item-link"></div>
             </div>
         </div>
     </div>
 
+    <div class="product__view">
+        <div class="product__category"></div>
+        <div class="product__name"></div>
+        <iframe class="" src="" frameborder="0"></iframe>
+<!--        <button class="btn">Mobile</button>-->
+<!--        <button class="btn">Desktop</button>-->
+    </div>
 </div>
 
 <script src="build/js/script.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    $('#js-product-list').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+</script>
 </body>
 </html>

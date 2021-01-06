@@ -1,9 +1,11 @@
 .container {
-  width: 1354px;
-  margin: 0 auto; }
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
 
 body {
-  padding: 20px; }
+  padding: 20px;
+  font-family: 'Manrope'; }
 
 button {
   border: none;
@@ -31,98 +33,48 @@ button {
   button:focus {
     outline: none; }
 
-.puzzle__subtitle {
+.category__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.category__item {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
   font-size: 32px;
-  margin: 32px 0;
-  text-align: center;
-  display: none; }
+  background-color: #3C7284; }
 
-.puzzle__grid {
+.category__title {
+  text-transform: capitalize; }
+
+.product__wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: auto;
-  width: 450px; }
-  .puzzle__grid--row {
-    position: absolute;
-    height: 450px;
-    margin: auto;
-    top: 28px;
-    left: 0;
-    right: 0; }
-    .puzzle__grid--row .puzzle__grid-col {
-      border: none; }
-      .puzzle__grid--row .puzzle__grid-col img {
-        width: 150px;
-        height: 150px; }
-  .puzzle__grid-col {
-    width: 150px;
-    border: 1px solid #000;
-    box-sizing: border-box; }
-  .puzzle__grid-row {
-    display: flex;
-    height: 150px; }
-  .puzzle__grid img {
-    width: 148px;
-    height: 148px; }
-  .puzzle__grid--randomized {
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    top: 0; }
-    .puzzle__grid--randomized .puzzle__subtitle {
-      display: block; }
-    .puzzle__grid--randomized .puzzle__grid-images {
-      display: flex; }
-    .puzzle__grid--randomized .puzzle__grid-col {
-      border: 1px solid #000; }
-      .puzzle__grid--randomized .puzzle__grid-col:nth-child(1) {
-        order: 3; }
-      .puzzle__grid--randomized .puzzle__grid-col:nth-child(2) {
-        order: 2; }
-      .puzzle__grid--randomized .puzzle__grid-col:nth-child(3) {
-        order: 1; }
-    .puzzle__grid--randomized .puzzle__grid-row:nth-child(1) {
-      order: 2; }
-    .puzzle__grid--randomized .puzzle__grid-row:nth-child(2) {
-      order: 3; }
-    .puzzle__grid--randomized .puzzle__grid-row:nth-child(3) {
-      order: 1; }
-    .puzzle__grid--randomized .puzzle__btn {
-      display: none; }
+  width: 700px;
+  height: 300px;
+  background: darkslategrey; }
 
-.puzzle__alert {
-  display: none; }
-  .puzzle__alert-content {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 300px;
-    height: fit-content;
-    padding: 40px;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 4px; }
-  .puzzle__alert-title {
-    font-size: 32px;
-    margin-bottom: 20px; }
-  .puzzle__alert-subtitle {
-    font-size: 18px;
-    margin-bottom: 10px; }
-  .puzzle__alert:after {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 0; }
+.product__list {
+  height: 150px;
+  overflow: hidden; }
+
+.product__item {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
