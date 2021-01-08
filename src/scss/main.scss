@@ -75,6 +75,7 @@ button{
   &__list {
     height: 150px;
   overflow: hidden;
+    display: none;
   }
   &__item{
     width: 300px;
