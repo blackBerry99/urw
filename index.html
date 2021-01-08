@@ -13,19 +13,21 @@
 <body>
 <div class="container">
     <div class="category__list" id="js-category-list"></div>
-    <div class="product__wrapper" id="js-product-wrapper">
-        <div class="product__list" id="js-product-list">
-<!--            <div class="product__item">-->
-<!--                <div class="product__item-title"></div>-->
-<!--                <div class="product__item-link"></div>-->
-<!--            </div>-->
-        </div>
+    <div class="category__wrapper" id="js-category-wrapper">
+        <button class="btn-close" onclick="closeSubCat()"></button>
+        <div class="category__inner" id="js-category-inner"></div>
+        <div class="product__list" id="js-product-list"></div>
     </div>
 
-    <div class="product__view">
-        <div class="product__category"></div>
-        <div class="product__name"></div>
-        <iframe class="" src="" frameborder="0"></iframe>
+    <div class="product" id="js-product-detail">
+        <button class="btn-close" onclick="closeProductDetail()"></button>
+        <button class="btn">mobile</button>
+        <button class="btn">desktop</button>
+        <div class="product__view">
+            <div class="product__category"></div>
+            <div class="product__name"></div>
+            <iframe class="" src="" frameborder="0"></iframe>
+        </div>
 <!--        <button class="btn">Mobile</button>-->
 <!--        <button class="btn">Desktop</button>-->
     </div>

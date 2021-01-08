@@ -1,5 +1,7 @@
-let productList = document.getElementById("js-product-wrapper");
+let productList = document.getElementById("js-category-inner");
+let productWrapper = document.getElementById("js-category-wrapper");
 let products = document.getElementById("js-product-list");
+let productDetail = document.getElementById("js-product-detail")
 var demonstration = {
     category: [
         {
@@ -26,8 +28,20 @@ var demonstration = {
                             link: "https://adsil1.com/tools/demonstration/XL/1905/live/index.html",
                         },
                         {
-                            linkName: "Azorim",
-                            link: "http://adsil1.com/tools/demonstration/azorim/0518/index.html",
+                            linkName: "Knor",
+                            link: "http://ds1.co.il/demonstrations/knor/1217/index.html",
+                        },
+                        {
+                            linkName: "clalitWheelOfFortune",
+                            link: "http://adsil1.com/tools/demonstration/clalitWheelOfFortune/index.html",
+                        },
+                        {
+                            linkName: "cafejoestraw",
+                            link: "http://adsil1.com/tools/demonstration/cafejoestraw062016/index.html",
+                        },
+                        {
+                            linkName: "lotus",
+                            link: "http://adsil1.com/tools/demonstration/lotusdip022016/index.html",
                         },
                     ],
                 },
@@ -97,31 +111,44 @@ let categoryItem = ''
 demonstration.category.forEach((c, index) => {
     categoryItem += `<div class="category__item" onclick="openCategory(${index})">
                     <div class="category__title">${c.cName}</div>
-                    <div class="category__sub">
-                        <div class="category__sub-item"></div>
-                    </div>
-                </div>`
+                     </div>`
 
 });
 document.getElementById('js-category-list').innerHTML = categoryItem;
 function openCategory(index) {
     let subCategoryItem = ''
-    demonstration.category[index].subCategory.forEach((sc) => {
-        subCategoryItem += `<div class="category__sub">
-                        <div class="category__sub-item" onclick="openProductList(${index})">${sc.subCName}</div>`
+    // let productItemAll = ''
+    demonstration.category[index].subCategory.forEach((sc, indexSubCat) => {
+        subCategoryItem += `
+<div class="category__sub">
+                        <div class="category__sub-item" onclick="openProductList(${index}, ${indexSubCat})">${sc.subCName}</div>
+                        </div>`
     })
-    document.getElementById('js-product-wrapper').innerHTML = subCategoryItem
-    productList.style.display = "block";
-}
+    document.getElementById('js-category-inner').innerHTML = subCategoryItem
+    productWrapper.style.display = "block";
 
-function openProductList(index) {
+    // productItemAll = demonstration.category[index].subCategory
+    // console.log(demonstration.category[index].subCategory.subCLinks[indexSubCat].linkName)
+
+}
+function openProductList(index, indexSubCat) {
     let productItem = ''
-    demonstration.category[index].subCategory[index].subCLinks.forEach((scl) => {
+    demonstration.category[index].subCategory[indexSubCat].subCLinks.forEach((scl) => {
         productItem += `<div class="product__item">
-                <div class="product__item-title">${scl.linkName}</div>
-                <div class="product__item-link"></div>
-            </div>`
+                            <div class="product__item-title" onclick="openProductDetail()">${scl.linkName}</div>
+                        </div>`
     })
     document.getElementById('js-product-list').innerHTML = productItem
     products.style.display = "block";
+}
+function openProductDetail(index, indexSubCat) {
+
+    productDetail.style.display = "block";
+}
+function closeSubCat() {
+    productWrapper.style.display = "none";
+}
+
+function closeProductDetail() {
+    productDetail.style.display = "none";
 }
