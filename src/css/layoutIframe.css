@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dolphinContainer{
+    /*font-family: "VarelaRound-Regular";*/
+    /*overflow: auto;*/
+    /*opacity: 1;*/
+    /*width: 90%;*/
+    /*height: 100%;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: 0 auto;*/
+    /*z-index: 9999999;*/
+    /*background-size: 100% 100%;*/
+    
+}
+
+.divState{
+    position: sticky;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#divIframe{
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 40%;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.galleryContainter{
+    position: absolute;
+    left: 0;
+    top: 75%;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9;
+    width: 90%;
+    justify-content: stretch;
+    display: flex;
+}
+
+.galleryItem{
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: inline-flex;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    height: 50%;
+    margin-left: 1.5%;
+    
+    
+}
+
+.itemThumb{
+    position: relative;
+    height: 20vh;
+
+}
