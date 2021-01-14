@@ -20,24 +20,29 @@ body{
     /*background-size: 100% 100%;*/
     
 }
-
-.divState{
-    position: sticky;
+iframe{
     left: 0;
-    right: 0;
-    margin: 0 auto;
+    right: 6px;
+    margin: auto;
+    border: none;
+}
+.divState{
+    /*position: sticky;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: 0 auto;*/
     text-align: center;
 }
 
 #divIframe{
-    position: sticky;
-    width: 100%;
-    left: 0;
-    top: 0;
-    height: 40%;
-    right: 0;
-    margin: 0 auto;
-    z-index: 9;
+    /*position: sticky;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*height: 40%;*/
+    /*right: 0;*/
+    /*margin: 0 auto;*/
+    /*z-index: 9;*/
 }
 
 .galleryContainter{
