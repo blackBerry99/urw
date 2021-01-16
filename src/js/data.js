@@ -145,34 +145,32 @@ var demonstration = {
         {
             cName: "video",
             cIcon: "../../../src/images/icons/video.png",
-            subCategory: [{
-                subCName: "tinder",
-                subCLinks: [{
-                    linkName: "Emek",
+            subCLinks: [
+                {
+                    linkName: "One",
                     link: "https://adsil1.com/tools/demonstrations/emek/0917/index.html",
-
+                    info: "some text"
                 },
-                    {
-                        linkName: "swipe Game Cellcom",
-                        link: "https://adsil1.com/tools/demonstration/cellcom/swipe_game/1018/index.html",
-                    },
-
-                ]
-            }],
+                {
+                    linkName: "Two",
+                    link: "https://adsil1.com/tools/demonstration/cellcom/swipe_game/1018/index.html",
+                    info: "some text"
+                },
+            ],
         },
 
-        // {
-        //     cName: "fifty",
-        //     cIcon: "../../../src/images/icons/50_50.png",
-        // },
-        //
-        // {
-        //     cName: "games",
-        //     cIcon: "../../../src/images/icons/gaming.png",
-        // },
-        //
-        // {
-        //     cName: "touch/click",
-        // },
+        {
+            cName: "fifty",
+            cIcon: "../../../src/images/icons/50_50.png",
+        },
+
+        {
+            cName: "games",
+            cIcon: "../../../src/images/icons/gaming.png",
+        },
+
+        {
+            cName: "touch/click",
+        },
     ]
 }

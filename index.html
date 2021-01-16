@@ -12,19 +12,17 @@
 </head>
 <body>
 <div class="main">
-<div class="main__header">
-    <div class="container main__header-container">
-        <div class="main__logo">
+<div class="header">
+    <div class="container header__container">
+        <div class="logo">
             <img src="src/images/Logo.png" alt="logo">
         </div>
-        <div class="main__nav">
-            <div class="main__nav-list" >
-                <div class="main__nav-wrapper owl-carousel owl-carousel-cat" id="js-category-list"></div>
-            </div>
+        <div class="category">
+                <div class="category__list owl-carousel owl-carousel-cat" id="js-category-list"></div>
         </div>
     </div>
 </div>
-<!--    <div class="main__subcat" id="js-subcat-list">-->
+ <!--    <div class="main__subcat" id="js-subcat-list">-->
 <!--        <div class="container main__subcat-container">-->
 <!--    <div class="main__nav-list" id="js-category-wrapper">-->
 <!--        <div class="category__inner owl-carousel owl-carousel-subcat" id="js-category-inner"></div>-->
@@ -38,18 +36,23 @@
         </div>
     </div>
 </div>
-    <div class="product" id="js-product-detail">
-        <div class="product__view" id="js-product-view">
-            <div class="product__info" id="js-product-info">
+    <div class="container">
+        <div class="product" id="js-product-detail">
+            <div class="product__view" id="js-product-view">
+                <div class="product__info" id="js-product-info">
+                </div>
             </div>
         </div>
     </div>
+
 
 </div>
 
 <script src="build/js/script.js"></script>
 <script src="owl/jquery.min.js"></script>
 <script src="owl/owl.carousel.min.js"></script>
+<script type="text/javascript">if(typeof wabtn4fg==="undefined"){wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="build/js/whatsapp-button.js";h.appendChild(s);}</script>
+<script src="build/js/whatsapp-button.js"></script>
 <script>
     $(document).ready(function() {
         var owl = $('.owl-carousel-cat');
@@ -59,7 +62,7 @@
             loop: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2
                 },
                 600: {
                     items: 3
