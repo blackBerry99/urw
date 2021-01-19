@@ -10,10 +10,7 @@ if (location.search) {
     }
     openProductDetail(data.catIndex, data.prodIndex)
 }
-let loadItem = ''
-demonstration.load.forEach((l, index) => {
-    loadItem =
-});
+
 
 let categoryItem = ''
 demonstration.category.forEach((c, index) => {
@@ -57,7 +54,7 @@ function openProductList(index) {
 
 
 }
-function openProductDetail(catIndex, prodIndex) {
+function openProductDetail(catIndex, prodIndex, adv) {
     const prod = demonstration.category[catIndex].subCLinks[prodIndex]
 
     productInfo = ''
@@ -86,7 +83,7 @@ function openProductDetail(catIndex, prodIndex) {
     if (prod.isDesktop ==  false) {
      document.getElementById('btn-state--desktop').disabled = true
     }
-    history.pushState(null, null, location.pathname + `?catIndex=${catIndex}?prodIndex=${prodIndex}` + `?adv=${demonstration.load[0].loadId}`)
+    history.pushState(null, null, location.pathname + `?catIndex=${catIndex}&prodIndex=${prodIndex}` + `adv=${adv}`)
     waCurrentPage = function() {
         return encodeURI("whatsapp://send?text=" + `http://localhost:3000/` + `?catIndex=${catIndex}` +  `?prodIndex=${prodIndex}`);
     }
