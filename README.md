@@ -1,4 +1,4 @@
-# test-project
+# project
 
 
 npm i - for modules install </br>
