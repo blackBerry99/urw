@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let currentLanguage = 'en'; // Default language
+  let currentLanguage = 'ua';
 
-// Function to load translations from JSON file
   function loadTranslations(language) {
     fetch(`../locales/${language}.json`)
       .then(response => response.json())
       .then(data => {
         updateText(data);
         createProgramLayout(data.program);
-        createEventCards(data.program);
+        createEventCards(data.program, data.events.details, data.events.registration);
         updatePartnerImages(language);
 
       })
@@ -40,34 +39,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.banner__title').textContent = t.banner.title;
     document.querySelector('.banner__subtitle').textContent = t.banner.subtitle;
-    document.querySelector('.banner__btn').textContent = t.banner.participateButton;
-    document.querySelector('.mob__btn').textContent = t.banner.participateButton;
+    // document.querySelector('.mob__btn').textContent = t.banner.participateButton;
     document.querySelector('.about__title').textContent = t.about.title;
     document.querySelector('.about__subtitle').innerHTML = t.about.subtitle;
 
     document.querySelector('.events__title').textContent = t.events.title;
 
     document.querySelector('.program__title').textContent = t.program.title;
-
-
+    document.querySelector('.program__header-label').textContent = t.program.download;
+    document.querySelector('.program__header-link').href = t.program.downloadLink;
+    document.querySelector('.program__header-link').download = 'Resilience_week_timetable.pdf';
 
     document.querySelector('.partners__title').textContent = t.partners.title;
+    const bannerBtn = document.querySelector('.banner__btn');
+    bannerBtn.textContent = t.banner.participateButton;
 
+    bannerBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
 
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
   }
 
   const navLinks = document.querySelectorAll('.header__nav a, .footer__nav a');
 
   navLinks.forEach(link => {
     link.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent default anchor click behavior
-
-      const targetId = this.getAttribute('href'); // Get the href attribute
-      const targetSection = document.querySelector(targetId); // Select the target section
+      event.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
 
       if (targetSection) {
         targetSection.scrollIntoView({
-          behavior: 'smooth' // Enables smooth scrolling
+          behavior: 'smooth'
         });
       }
     });
@@ -81,9 +91,14 @@ document.addEventListener('DOMContentLoaded', () => {
       button.classList.remove('header__lang-item--active');
     });
 
-    // Add 'active' class to the clicked language button
     document.getElementById(`switch-${language}`).classList.add('header__lang-item--active');
   }
+
+  const monthMapping = {
+    'вересня': 'September',
+    'жовтня': 'October',
+  };
+
   function createProgramLayout(program) {
     const container = document.getElementById('program-container');
     container.innerHTML = '';
@@ -104,15 +119,25 @@ document.addEventListener('DOMContentLoaded', () => {
       titleElement.className = 'program__item-title';
 
       const dateObject = new Date(date);
+      const [day, ukrMonth] = date.split(' ');
+      const englishMonth = monthMapping[ukrMonth];
 
-      const options = { weekday: 'long' };
-      const weekday = dateObject.toLocaleDateString('en-US', options);
-      const day = dateObject.getDate();
-      const month = dateObject.toLocaleString('en-US', { month: 'long' });
+      if (currentLanguage === 'ua') {
+        const options = { weekday: 'long' };
+        const formattedDateString = `${englishMonth} ${day}, 2024`;
+        const dateObject = new Date(formattedDateString);
+        const weekday = dateObject.toLocaleDateString('uk-UA', options);
+        titleElement.innerHTML = `${weekday}, <br>${day} ${ukrMonth} `;
 
-      const formattedDate = `${weekday}, <br>${month} ${day}`;
+      } else {
+        const options = { weekday: 'long' };
+        const weekday = dateObject.toLocaleDateString('en-US', options);
+        const day = dateObject.getDate();
+        const month = dateObject.toLocaleString('en-US', { month: 'long' });
 
-      titleElement.innerHTML = formattedDate;
+        titleElement.innerHTML = `${weekday}, <br>${month} ${day}`;
+      }
+
       programItem.appendChild(titleElement);
 
       events.forEach(event => {
@@ -121,11 +146,12 @@ document.addEventListener('DOMContentLoaded', () => {
         timeElement.textContent = event.time;
         programItem.appendChild(timeElement);
 
-        if (event.isEvent === 'yes') {
+        if (event.color) {
           const eventLink = document.createElement('a');
-          eventLink.className = 'program__item-link';
+          eventLink.className = `program__item-link ${event.color}`;
           eventLink.href = event.link || '#';
           eventLink.textContent = event.event;
+          eventLink.target = '_blank';
           programItem.appendChild(eventLink);
         } else {
           const eventTitle = document.createElement('p');
@@ -134,23 +160,33 @@ document.addEventListener('DOMContentLoaded', () => {
           programItem.appendChild(eventTitle);
         }
 
+        if (event.description) {
+          const descriptionElement = document.createElement('p');
+          descriptionElement.className = 'program__item-desc';
+          descriptionElement.textContent = event.description;
+          programItem.appendChild(descriptionElement);
+        }
+
       });
 
       container.appendChild(programItem);
     });
   }
 
-  function createEventCards(program) {
+
+
+  function createEventCards(program, details, registration) {
     const eventsContainer = document.querySelector('.events__grid');
     eventsContainer.innerHTML = '';
 
     const groupedEvents = program.list.reduce((acc, event) => {
-      if (event.isEvent === 'yes') {
+      if (event.color) {
         if (!acc[event.event]) {
           acc[event.event] = {
             title: event.event,
-            link: event.link || '#',
+            link: event.eventLink || '#',
             dates: [],
+            color: event.color
           };
         }
         acc[event.event].dates.push(event.date);
@@ -160,27 +196,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Object.values(groupedEvents).forEach(group => {
       group.dates.sort((a, b) => new Date(a) - new Date(b));
-
       const dateRange = group.dates.length > 1 ? `${group.dates[0]} - ${group.dates[group.dates.length - 1]}` : group.dates[0];
 
       const eventItem = document.createElement('a');
-      eventItem.className = 'events__item';
-      eventItem.dataset.aos="zoom-out-right";
+      eventItem.className = `events__item ${group.color}`;
+      eventItem.dataset.aos = "zoom-out-right";
       eventItem.href = group.link;
+      eventItem.target = '_blank';
 
       const titleElement = document.createElement('h3');
       titleElement.className = 'events__item-title';
-      titleElement.textContent = group.title; // Use the event name as the title
+      titleElement.textContent = group.title;
       eventItem.appendChild(titleElement);
 
       const dateElement = document.createElement('p');
       dateElement.className = 'events__item-date';
-      dateElement.textContent = dateRange; // Combine date and time
+      dateElement.textContent = dateRange;
       eventItem.appendChild(dateElement);
 
       const linkElement = document.createElement('a');
       linkElement.href = group.link;
-      linkElement.textContent = 'Детальніше';
+      linkElement.target = '_blank';
+      linkElement.classList.add('events__item-link')
+
+      if (group.color === 'light-blue') {
+        linkElement.textContent = registration;
+      } else {
+        linkElement.textContent = details;
+      }
       eventItem.appendChild(linkElement);
 
       eventsContainer.appendChild(eventItem);
@@ -189,59 +232,80 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updatePartnerImages(language) {
     const partnersGrid = document.querySelector('.partners__grid');
-    partnersGrid.innerHTML = ''; // Clear any existing images
-
-    // Language-specific images
-    const languageSpecificImages = [
-      { en: '1_en.png', ua: '1_ua.png' },
-      { en: '2-en.png', ua: '2-ua.png' },
-    ];
+    partnersGrid.innerHTML = '';
 
     const commonImages = [
+      '23.jpg',
+      '1.png',
+      '2.jpg',
       '3.png',
-      '4.webp',
+      '4.png',
       '5.png',
-      '6.jpg',
-      '7.jpg',
-      '8.jpg',
-      '9.svg',
+      '6.png',
+      '7.svg',
+      '8.svg',
+      '9.png',
       '10.jpg',
-      '11.jpg',
-      '12.png',
+      '11.jpeg',
+      '12.jpg',
       '13.png',
-      '14.png',
-      '15.svg',
-      '16.jpg',
+      '14.jpg',
+      '15.png',
+      '16.png',
       '17.png',
-      '18.png'
+      '18.png',
+      '19.png',
+      '20.jpg',
+      '21.jpg',
+      '22.png',
     ];
-
-    languageSpecificImages.forEach(image => {
-      const imgSrc = `src/images/partners/${image[language]}`;
-      const imgElement = document.createElement('img');
-      imgElement.src = imgSrc;
-      imgElement.alt = 'Partner Logo'; // Add an alt attribute for accessibility
-
-      const partnerItem = document.createElement('div');
-      partnerItem.className = 'partners__item';
-      partnerItem.appendChild(imgElement);
-
-      partnersGrid.appendChild(partnerItem);
-    });
 
     commonImages.forEach(image => {
       const imgSrc = `src/images/partners/${image}`;
-      const imgElement = document.createElement('img');
-      imgElement.src = imgSrc;
-      imgElement.alt = 'Partner Logo';
-
-      const partnerItem = document.createElement('div');
-      partnerItem.className = 'partners__item';
-      partnerItem.appendChild(imgElement);
-
-      partnersGrid.appendChild(partnerItem);
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide partners__item';
+      slide.innerHTML = `<img src="${imgSrc}" alt="Partner Logo">`;
+      partnersGrid.appendChild(slide);
     });
+
+
+
+    let swiper;
+
+    function initializeSwiper() {
+      swiper = new Swiper('.partners__swiper', {
+        spaceBetween: 32,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        speed: 2000,
+        pauseOnMouseEnter: true,
+        autoplay: {
+          delay: 0,
+        },
+        loop:true,
+      });
+
+      swiper.autoplay.stop();
+      observeSwiperAutoplay();
+    }
+    function observeSwiperAutoplay() {
+      const partnersSection = document.getElementById('partners');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(  swiper.autoplay.start(), 2000)
+          } else {
+          }
+        });
+      }, { threshold: 1 });
+
+      observer.observe(partnersSection);
+    }
+
+    initializeSwiper()
   }
+
 
   function openMobContent (selector) {
     const content = document.querySelector(selector)
@@ -263,8 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sectionArrow = sectionBlock.querySelector('.section__arrow');
     const sectionContent = sectionBlock.querySelector('.section__show');
     if(sectionContent) {
-      console.log(sectionContent)
-      console.log(sectionContent.scrollHeight)
+
     }
 
     if (sectionArrow) {
@@ -274,11 +337,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-
-
-
-
-
   loadTranslations('ua');
-
 })

@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="build/css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>urw</title>
+    <title>Ukrainian Resilience Forum</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <header class="header">
@@ -33,7 +37,7 @@
             <div class="banner__content">
                 <h1 data-aos="fade-right" data-aos-delay="50" class="banner__title">Тиждень стійкості українських міст</h1>
                 <p  data-aos="fade-right" data-aos-delay="300" class="banner__subtitle"></p>
-                <button data-aos="fade-right" data-aos-delay="600" class="btn banner__btn"></button>
+                <a href="#program" data-aos="fade-right" data-aos-delay="600" class="btn banner__btn"></a>
             </div>
             <img class="banner__img--desk" src="src/images/banner.svg" alt="banner">
             <img class="banner__img--mob" src="src/images/banner-mob.svg" alt="banner">
@@ -69,7 +73,7 @@
                     <p>
                         Представлення книги та дискусія щодо майбутнього розвитку міст вздовж Каховського водосховища
                     </p>
-                    <a href="/">Детальніше</a>
+                    <a class="events__item-link" href="/">Детальніше</a>
                 </div>
             </div>
         </div>
@@ -77,9 +81,16 @@
 
     <section class="program" id="program">
         <div class="container">
-            <div class="section__header">
+            <div class="section__header program__header">
                 <h2 class="section__title program__title"></h2>
                 <img class="section__arrow" src="src/images/arrow.svg">
+                <a class="program__header-link" href="" download>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 18L4.5 10.5L6.6 8.325L10.5 12.225V0H13.5V12.225L17.4 8.325L19.5 10.5L12 18ZM3 24C2.175 24 1.46875 23.7063 0.88125 23.1188C0.29375 22.5312 0 21.825 0 21V16.5H3V21H21V16.5H24V21C24 21.825 23.7063 22.5312 23.1188 23.1188C22.5312 23.7063 21.825 24 21 24H3Z" fill="#0028FF"/>
+                    </svg>
+                    <span class="program__header-label">
+                    </span>
+                </a>
             </div>
             <div class="section__show program__grid" id="program-container">
                 <div class="program__item">
@@ -90,33 +101,73 @@
                         09:00-18:00
                     </p>
                     <a>???</a>
+                    <p class="program__item-desc"></p>
                     <p class="program__item-info">
                         Робоча зустріч асоціацій „Укртеплокомуненерго” та "УкрТЕЦ". Обговорення результатів та планів обох асоціацій щодо розвитку стійкості систем теплопостачання у містах.
                     </p>
                 </div>
             </div>
-            <a data-aos="fade-right" data-aos-delay="600" class="btn mob__btn"></a>
+<!--            <a data-aos="fade-right" data-aos-delay="600" class="btn mob__btn"></a>-->
         </div>
     </section>
-
 
     <section class="partners" id="partners">
         <div class="container">
             <h2 class="section__title partners__title"></h2>
-            <div class="partners__grid">
-                <div class="partners__item">
+            <div class="swiper partners__swiper">
+                <div class="swiper-wrapper partners__grid">
                 </div>
             </div>
         </div>
     </section>
+
 </main>
 <footer class="footer">
     <div class="container footer__container">
-        <img src="src/images/logo-light.svg" alt="logo" class="footer__logo">
-        <nav>
-            <ul class="nav footer__nav">
-            </ul>
-        </nav>
+        <div class="footer__left">
+            <img src="src/images/logo-light.svg" alt="logo" class="footer__logo">
+            <nav>
+                <ul class="nav footer__nav">
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__contacts">
+            <a href="tel:+38 (032) 254-60-81" class="footer__contacts-phone">
+                <svg width="207" height="207" viewBox="0 0 207 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M165.863 131.616L143.955 129.115C138.693 128.511 133.518 130.322 129.81 134.031L113.939 149.901C89.5299 137.481 69.5194 117.557 57.0992 93.0613L73.0558 77.1047C76.7646 73.3958 78.5759 68.2207 77.9721 62.9594L75.4708 41.2239C74.4358 32.5124 67.1044 25.9573 58.3067 25.9573H43.3851C33.6386 25.9573 25.5309 34.065 26.1347 43.8114C30.7061 117.471 89.6161 176.294 163.189 180.866C172.936 181.47 181.043 173.362 181.043 163.615V148.694C181.129 139.982 174.574 132.651 165.863 131.616Z" fill="white"/>
+                </svg>
+                +38 (032) 254-60-81
+            </a>
+            <a href="tel:+38 (032) 254-60-82" class="footer__contacts-phone">
+                <svg width="207" height="207" viewBox="0 0 207 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M165.863 131.616L143.955 129.115C138.693 128.511 133.518 130.322 129.81 134.031L113.939 149.901C89.5299 137.481 69.5194 117.557 57.0992 93.0613L73.0558 77.1047C76.7646 73.3958 78.5759 68.2207 77.9721 62.9594L75.4708 41.2239C74.4358 32.5124 67.1044 25.9573 58.3067 25.9573H43.3851C33.6386 25.9573 25.5309 34.065 26.1347 43.8114C30.7061 117.471 89.6161 176.294 163.189 180.866C172.936 181.47 181.043 173.362 181.043 163.615V148.694C181.129 139.982 174.574 132.651 165.863 131.616Z" fill="white"/>
+                </svg>
+                +38 (032) 254-60-82
+            </a>
+            <a href="tel:+38 (067) 672-86-81" class="footer__contacts-phone">
+                <svg width="207" height="207" viewBox="0 0 207 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M165.863 131.616L143.955 129.115C138.693 128.511 133.518 130.322 129.81 134.031L113.939 149.901C89.5299 137.481 69.5194 117.557 57.0992 93.0613L73.0558 77.1047C76.7646 73.3958 78.5759 68.2207 77.9721 62.9594L75.4708 41.2239C74.4358 32.5124 67.1044 25.9573 58.3067 25.9573H43.3851C33.6386 25.9573 25.5309 34.065 26.1347 43.8114C30.7061 117.471 89.6161 176.294 163.189 180.866C172.936 181.47 181.043 173.362 181.043 163.615V148.694C181.129 139.982 174.574 132.651 165.863 131.616Z" fill="white"/>
+                </svg>
+                +38 (067) 672-86-81
+            </a>
+
+            <a href="mailto:info@city-institute.org" class="footer__contacts-mail">
+                <svg width="208" height="207" viewBox="0 0 208 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M172.704 34.5008H34.7012C25.2135 34.5008 17.5371 42.2635 17.5371 51.7512L17.4508 155.254C17.4508 164.741 25.2135 172.504 34.7012 172.504H172.704C182.192 172.504 189.955 164.741 189.955 155.254V51.7512C189.955 42.2635 182.192 34.5008 172.704 34.5008ZM169.254 71.1579L108.274 109.281C105.514 111.006 101.891 111.006 99.1314 109.281L38.1513 71.1579C35.995 69.7778 34.7012 67.449 34.7012 64.9477C34.7012 59.1688 40.9976 55.7188 45.9139 58.7376L103.703 94.8771L161.492 58.7376C166.408 55.7188 172.704 59.1688 172.704 64.9477C172.704 67.449 171.411 69.7778 169.254 71.1579Z" fill="white"/>
+                </svg>
+                info@city-institute.org
+            </a>
+
+            <div class="footer__contacts-location">
+
+                <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M103.703 17.748C70.3233 17.748 43.3264 44.7449 43.3264 78.1244C43.3264 123.407 103.703 190.252 103.703 190.252C103.703 190.252 164.079 123.407 164.079 78.1244C164.079 44.7449 137.082 17.748 103.703 17.748ZM103.703 99.6874C91.8 99.6874 82.1398 90.0272 82.1398 78.1244C82.1398 66.2216 91.8 56.5614 103.703 56.5614C115.606 56.5614 125.266 66.2216 125.266 78.1244C125.266 90.0272 115.606 99.6874 103.703 99.6874Z" fill="white"/>
+                </svg>
+
+                79008, Львів, пл. Ринок, 1, каб. 108-111
+            </div>
+        </div>
+
     </div>
     <div class="container">
         <p class="copyright">
@@ -126,9 +177,10 @@
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   AOS.init({
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
     initClassName: 'aos-init', // class applied after initialization
     animatedClassName: 'aos-animate', // class applied on animation
@@ -146,7 +198,6 @@
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
   });
 </script>
 <script src="build/js/script.js"></script>

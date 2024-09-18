@@ -1,154 +1,206 @@
 {
   "nav": {
-    "about": "Про подію",
-    "events": "Заходи",
-    "program": "Програма",
-    "partners": "Партнери"
+    "about": "About the event",
+    "events": "Events",
+    "program": "Program",
+    "partners": "Partners"
   },
   "banner": {
-    "title": "Тиждень стійкості українських міст",
-    "subtitle": "16-20 вересня 2024, Львів",
-    "participateButton": "взяти участь"
+    "title": "Ukrainian Resilience Forum",
+    "subtitle": "September 30 — October 4 2024, Lviv",
+    "participateButton": "take part"
   },
   "about": {
-    "title": "Про подію",
-    "subtitle": "Вторгнення російських військ в Україну і вже другий рік повномасштабної війни стали потрясінням, яке потребує надзусиль на рівні місцевого самоврядування для ефективного реагування на військові загрози та адаптації систем життєзабезпечення до блекаутів та інших викликів. Стійкість громад — це здатність місцевого самоврядування, і мешканців виживати, адаптуватися та розвиватися, незалежно від того, яких довгострокових загроз вони зазнають.<br><br><strong>Ukrainian Resilience Week</strong> — це майданчик для експертних дискусій, надихаючих історій та просування інтересів місцевого самоврядування у формуванні стійкості."
+    "title": "About the event",
+    "subtitle": "The invasion of Russian troops into Ukraine and the second year of full-scale war have become a shock that requires extraordinary efforts at the local government level to effectively respond to military threats and adapt life support systems to blackouts and other challenges. Community resilience is the ability of local governments and residents to survive, adapt, and grow, regardless of the long-term threats they face. <br><br><strong> Ukrainian Resilience Week </strong>  is a platform for expert discussions, inspiring stories, and promoting the interests of local governance in building resilience."
   },
   "events": {
-    "title": "Заходи"
+    "title": "Events",
+    "details": "Details",
+    "registration": "Registration"
   },
   "program":  {
-    "title": "Програма",
+    "title": "Program",
+    "download": "Download pdf program",
+    "downloadLink": "src/images/Resilience_week_timetable-EN.pdf",
     "list": [
       {
+        "eventLink": "",
         "date": "September 30",
         "time": "14:00-17:00",
-        "event": "Виїзне засідання Комітету Верховної Ради України з питань енергетики та житлово-комунальних послуг",
-        "location": "Мала сесійна зала Львівської міської ради, площа Ринок, 1",
-        "isEvent": ""
+        "event": "Offsite Meeting of the Verkhovna Rada Committee on Energy, Housing and Utilities",
+        "description": "",
+        "link": "",
+        "color": ""
       },
       {
+        "eventLink": "",
         "date": "October 1",
         "time": "8:30-9:00",
-        "event": "Покладання квітів на Марсовому полі до Дня захисників і захисниць України",
-        "location": "Місце і час відправки трансферу буде повідомлено окремо",
-        "isEvent": "yes"
+        "event": "Laying flowers on Mars Field for the Defender of Ukraine Day",
+        "description": "",
+        "link": "",
+        "color": ""
       },
       {
+        "eventLink": "",
+        "date": "October 1",
+        "time": "10:00-14:00",
+        "event": "Cities Resilience and recovery",
+        "description": "",
+        "link": "",
+        "color": ""
+      },
+      {
+        "eventLink": "https://www.facebook.com/LvivEcoforum",
         "date": "October 1",
         "time": "10:00-18:00",
         "event": "IX Lviv Eco Forum",
-        "location": "!FESTrepublic, (конференц-зал), вул. Старознесенська, 24-26.",
-        "isEvent": "yes"
+        "description": "The IX Lviv Eco Forum is dedicated to the topic of ensuring community resilience in the face of potential blackouts this winter. Together with representatives from central government authorities, mayors, humanitarian organizations, and financial institutions, we will discuss how to survive, adapt, and thrive under military aggression, regardless of the future threats faced by urban infrastructure.",
+        "link": "https://drive.google.com/drive/folders/1fFXr3bBYFTp51sB1yY7X08_OLGI8fXLr?usp=sharing",
+        "color": "light-green"
       },
       {
-        "date": "October 1",
-        "time": "10:00-10:15",
-        "event": "Вступні слова до Lviv Eco Forum та Ukrainian Resilience Week",
-        "location": "!FESTrepublic, (конференц-зал), вул. Старознесенська, 24-26.",
-        "isEvent": ""
-      },
-      {
-        "date": "October 1",
-        "time": "10:15-14:00",
-        "event": "Спільне обговорення проблем життєзабезпечення міст в умовах загрози відключення електроенергії взимку та можливих шляхів їх подолання",
-        "location": "!FESTrepublic, (конференц-зал), вул. Старознесенська, 24-26.",
-        "isEvent": ""
-      },
-      {
+        "eventLink": "https://www.facebook.com/Lvivteploenergo",
         "date": "October 1",
         "time": "15:00-18:00",
         "event": "Heat Energy Forum",
-        "location": "!FESTrepublic, (укриття), вул. Старознесенська, 24-26.",
-        "isEvent": "yes"
+        "description": "",
+        "link": "",
+        "color": "orange"
       },
       {
+        "eventLink": "https://docs.google.com/forms/d/11uaTdXX9CYqqQCnuUhPV49N8X3qO86RrRERhoQPD4k8/edit",
         "date": "October 1",
         "time": "18:00-20:00",
-        "event": "Публічна експертна дискусія на тему стійкості: Протидія дезінформації в енергетичному секторі",
-        "location": "Локація буде повідомлена пізніше",
-        "isEvent": "yes"
+        "event": "Public discussion on city resilience: Combating disinformation in the energy sector",
+        "description": "",
+        "link": "https://docs.google.com/forms/d/11uaTdXX9CYqqQCnuUhPV49N8X3qO86RrRERhoQPD4k8/edit",
+        "color": "light-blue"
       },
       {
+        "eventLink": "https://www.facebook.com/LvivEcoforum",
         "date": "October 2",
-        "time": "10:00-14:00",
+        "time": "09:30-14:00",
         "event": "IX Lviv Eco Forum",
-        "location": "!FESTrepublic, (конференц-зал), вул. Старознесенська, 24-26.",
-        "isEvent": "yes"
+        "description": "",
+        "link": "https://drive.google.com/drive/folders/1fFXr3bBYFTp51sB1yY7X08_OLGI8fXLr?usp=sharing",
+        "color": "light-green"
       },
       {
+        "eventLink": "https://www.facebook.com/zelenemisto?locale=uk_UA",
         "date": "October 2",
         "time": "8:30-18:00",
-        "event": "Супутній захід IX Lviv Eco Forum : Управління відходами",
-        "location": "!FESTrepublic, (укриття), вул. Старознесенська, 24-26.",
-        "isEvent": "yes"
+        "event": "Lviv Eco Forum 2024 Waste Management",
+        "description": "“Lviv Eco Forum 2024: Waste Management” will feature presentations from leading specialists from across Ukraine and Europe, and an exchange of experiences with representatives of city authorities, the public sector, and environmental initiatives. The forum serves as a platform for discussing and developing joint solutions to foster the creation of a modern waste management system in Ukraine.",
+        "link": "https://drive.google.com/drive/folders/1yqr1Vi153S1-WTMsRL2X7OmRiDUh25aq?usp=drive_link",
+        "color": "light-green"
       },
       {
+        "eventLink": "https://www.facebook.com/Lvivteploenergo",
         "date": "October 2",
         "time": "10:00-18:00",
         "event": "Heat Energy Forum",
-        "location": "Готель Соната",
-        "isEvent": ""
+        "description": "A platform for professional dialogue, exchange of experience, and knowledge sharing between experts, scientists, business representatives, and government authorities to ensure stable and reliable heat supply in Ukraine amidst the current challenges caused by Russian aggression.",
+        "link": "https://drive.google.com/drive/folders/1bSCTzUWt1h77Ay9AArscNr3ctFnLoF5o?usp=sharing",
+        "color": "orange"
       },
       {
+        "eventLink": "https://docs.google.com/forms/d/1pd9bnHIqdd4EvLqJTDUymlQYF2YnqX50zQHb9Me159I/edit?usp=drive_web",
         "date": "October 2",
         "time": "18:00-20:00",
-        "event": "Публічна експертна дискусія на тему стійкості: Можливості та ризики термічної обробки відходів",
-        "location": "Локація буде повідомлена пізніше",
-        "isEvent": "yes"
+        "event": "Public discussion on city resilience: Opportunities and risks of thermal treatment of waste",
+        "description": "",
+        "link": "https://docs.google.com/forms/d/1pd9bnHIqdd4EvLqJTDUymlQYF2YnqX50zQHb9Me159I/edit?usp=drive_web",
+        "color": "light-blue"
       },
       {
+        "eventLink": "https://www.facebook.com/FinanceDeptLviv",
         "date": "October 3",
         "time": "9:00-18:00",
-        "event": "Форум \"Фінансова стійкість та економічний розвиток громад",
-        "location": "Bank Hotel",
-        "isEvent": "yes"
+        "event": "Forum “Financial Sustainability and Economic Development of Communities”",
+        "description": "A platform for exchange of experiences and ideas on strengthening the financial foundation of local governance and stimulating the economic development of cities.\n\nBest European practices in attracting additional sources of funding for cities",
+        "link": "https://drive.google.com/drive/folders/1dQwLI3dWoejwdbRuacuZxvR3HMK9OUNO?usp=sharing",
+        "color": "default"
       },
       {
+        "eventLink": "https://www.facebook.com/share/4zUnUXGn6L6jV361/",
         "date": "October 3",
         "time": "9:00-18:00",
-        "event": "XV Всеукраїнський Форум ОСББ",
-        "location": "Велика сесійна зала Львівської міської ради, площа Ринок, 1",
-        "isEvent": "yes"
+        "event": "XV Allukrainian Condominium Forum",
+        "description": "The All-Ukrainian Condominium Forum is the main event of the year in the field of housing and communal services in Ukraine. It serves as a platform for finding joint solutions to urgent issues for condominiums and the management of multi-apartment buildings overall.",
+        "link": "https://drive.google.com/drive/folders/12m2QSCGD-CLw_v2oza7g2FVPulJnR7x9?usp=sharing",
+        "color": "blue"
       },
       {
+        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLScr7kDkluL5W3TD--bLyS4b0VRPVf0ujKQVYdZbVpzjCD-V5Q/viewform?usp=sf_link",
+        "date": "October 3",
+        "time": "16:00-17:30",
+        "event": "Online side event: Urban Resilience and Innovation: Transforming Cities for Sustainable and Secure Future",
+        "description": "",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScr7kDkluL5W3TD--bLyS4b0VRPVf0ujKQVYdZbVpzjCD-V5Q/viewform?usp=sf_link",
+        "color": "light-blue"
+      },
+      {
+        "eventLink": "https://docs.google.com/forms/d/1MIk4jQrglmIOxUzyZZC8JPPSy6bGxYW18S0txuEj654/edit?usp=drive_web",
         "date": "October 3",
         "time": "18:00-20:00",
-        "event": "Публічна експертна дискусія на тему стійкості: «Сонце і вітер - крапля в морі?». Презентація дослідження Грінпіс про потенціал сонячної та вітрової енергії",
-        "location": "Локація буде повідомлена пізніше",
-        "isEvent": "yes"
+        "event": "Public discussion on city resilience: \"Sun and wind - a drop in the ocean?\". Presentation of GREENPEACE research on the potential of solar and wind energy",
+        "description": "",
+        "link": "https://docs.google.com/forms/d/1MIk4jQrglmIOxUzyZZC8JPPSy6bGxYW18S0txuEj654/edit?usp=drive_web",
+        "color": "light-blue"
       },
       {
+        "eventLink": "https://www.facebook.com/FinanceDeptLviv",
         "date": "October 4",
         "time": "9:00-13:00",
-        "event": "Форум \"Фінансова стійкість та економічний розвиток громад",
-        "location": "Bank Hotel",
-        "isEvent": "yes"
+        "event": "Forum “Financial Sustainability and Economic Development of Communities”",
+        "description": "",
+        "link": "https://drive.google.com/drive/folders/1dQwLI3dWoejwdbRuacuZxvR3HMK9OUNO?usp=sharing",
+        "color": "default"
       },
       {
+        "eventLink": "https://www.facebook.com/share/4zUnUXGn6L6jV361/",
         "date": "October 4",
         "time": "9:00-13:00",
-        "event": "XV Всеукраїнський Форум ОСББ",
-        "location": "Велика сесійна зала Львівської міської ради, площа Ринок, 1",
-        "isEvent": "yes"
+        "event": "XV Allukrainian Condominium Forum",
+        "description": "",
+        "link": "https://drive.google.com/drive/folders/12m2QSCGD-CLw_v2oza7g2FVPulJnR7x9?usp=sharing",
+        "color": "blue"
       },
       {
+        "eventLink": "https://forms.gle/DLTV73VHkRZKfDpf6",
+        "date": "October 4",
+        "time": "11:00-12:30",
+        "event": "Online side event: New approach for association of Ukrainian cities wuth the EU Local Green Deal",
+        "description": "",
+        "link": "https://forms.gle/DLTV73VHkRZKfDpf6",
+        "color": "light-blue"
+      },
+      {
+        "eventLink": "",
         "date": "October 4",
         "time": "14:00-17:00",
-        "event": "Озеленення громад, вразливих до зміни клімату",
-        "location": "Локація буде повідомлена пізніше",
-        "isEvent": "yes"
+        "event": "Greening communities vulnerable to climate change",
+        "description": "",
+        "link": "",
+        "color": ""
       },
       {
+        "eventLink": "",
         "date": "October 4",
         "time": "18:00-20:00",
-        "event": "Підбиття підсумків Ukrainian Resilience Week",
-        "location": "Біла зала Львівської міської ради, площа Ринок, 1",
-        "isEvent": ""
+        "event": "Summarizing the results of Ukrainian Resilience Week",
+        "description": "",
+        "link": "",
+        "color": ""
       }
     ]
   },
   "partners": {
-    "title": "Партнери"
+    "title": "Partners"
+  },
+  "contacts": {
+    "address": "79008, Львів, пл. Ринок, 1, каб. 108-111\n"
   }
 }
