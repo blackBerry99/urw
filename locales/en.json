@@ -66,16 +66,16 @@
         "time": "15:00-18:00",
         "event": "Heat Energy Forum",
         "description": "",
-        "link": "",
+        "link": "https://drive.google.com/drive/folders/1bSCTzUWt1h77Ay9AArscNr3ctFnLoF5o?usp=sharing",
         "color": "orange"
       },
       {
-        "eventLink": "https://docs.google.com/forms/d/11uaTdXX9CYqqQCnuUhPV49N8X3qO86RrRERhoQPD4k8/edit",
+        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfWr0oowdgoczs4heBstyFuA9EatqmyEtW2VcTymfWsRkYiLw/viewform",
         "date": "October 1",
         "time": "18:00-20:00",
         "event": "Public discussion on city resilience: Combating disinformation in the energy sector",
         "description": "",
-        "link": "https://docs.google.com/forms/d/11uaTdXX9CYqqQCnuUhPV49N8X3qO86RrRERhoQPD4k8/edit",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfWr0oowdgoczs4heBstyFuA9EatqmyEtW2VcTymfWsRkYiLw/viewform",
         "color": "light-blue"
       },
       {
@@ -92,7 +92,7 @@
         "date": "October 2",
         "time": "8:30-18:00",
         "event": "Lviv Eco Forum 2024 Waste Management",
-        "description": "“Lviv Eco Forum 2024: Waste Management” will feature presentations from leading specialists from across Ukraine and Europe, and an exchange of experiences with representatives of city authorities, the public sector, and environmental initiatives. The forum serves as a platform for discussing and developing joint solutions to foster the creation of a modern waste management system in Ukraine.",
+        "description": "«Lviv Eco Forum 2024: Waste Management» will feature presentations from leading specialists from across Ukraine and Europe, and an exchange of experiences with representatives of city authorities, the public sector, and environmental initiatives. The forum serves as a platform for discussing and developing joint solutions to foster the creation of a modern waste management system in Ukraine.",
         "link": "https://drive.google.com/drive/folders/1yqr1Vi153S1-WTMsRL2X7OmRiDUh25aq?usp=drive_link",
         "color": "light-green"
       },
@@ -106,19 +106,19 @@
         "color": "orange"
       },
       {
-        "eventLink": "https://docs.google.com/forms/d/1pd9bnHIqdd4EvLqJTDUymlQYF2YnqX50zQHb9Me159I/edit?usp=drive_web",
+        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSeFQ3vRWCstgs00nRbN5RDURKWU2Vs2-eK2BNvqG0aUASZAlQ/viewform",
         "date": "October 2",
         "time": "18:00-20:00",
         "event": "Public discussion on city resilience: Opportunities and risks of thermal treatment of waste",
         "description": "",
-        "link": "https://docs.google.com/forms/d/1pd9bnHIqdd4EvLqJTDUymlQYF2YnqX50zQHb9Me159I/edit?usp=drive_web",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeFQ3vRWCstgs00nRbN5RDURKWU2Vs2-eK2BNvqG0aUASZAlQ/viewform",
         "color": "light-blue"
       },
       {
         "eventLink": "https://www.facebook.com/FinanceDeptLviv",
         "date": "October 3",
         "time": "9:00-18:00",
-        "event": "Forum “Financial Sustainability and Economic Development of Communities”",
+        "event": "Forum «Financial Sustainability and Economic Development of Communities»",
         "description": "A platform for exchange of experiences and ideas on strengthening the financial foundation of local governance and stimulating the economic development of cities.\n\nBest European practices in attracting additional sources of funding for cities",
         "link": "https://drive.google.com/drive/folders/1dQwLI3dWoejwdbRuacuZxvR3HMK9OUNO?usp=sharing",
         "color": "default"
@@ -142,19 +142,19 @@
         "color": "light-blue"
       },
       {
-        "eventLink": "https://docs.google.com/forms/d/1MIk4jQrglmIOxUzyZZC8JPPSy6bGxYW18S0txuEj654/edit?usp=drive_web",
+        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLScVPYWM-xlcM9Jk8PeEMPBUvQYYa0S7hmulC7lzvTX92wFB3w/viewform",
         "date": "October 3",
         "time": "18:00-20:00",
-        "event": "Public discussion on city resilience: \"Sun and wind - a drop in the ocean?\". Presentation of GREENPEACE research on the potential of solar and wind energy",
+        "event": "Public discussion on city resilience: «Sun and wind - a drop in the ocean?». Presentation of GREENPEACE research on the potential of solar and wind energy",
         "description": "",
-        "link": "https://docs.google.com/forms/d/1MIk4jQrglmIOxUzyZZC8JPPSy6bGxYW18S0txuEj654/edit?usp=drive_web",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScVPYWM-xlcM9Jk8PeEMPBUvQYYa0S7hmulC7lzvTX92wFB3w/viewform",
         "color": "light-blue"
       },
       {
         "eventLink": "https://www.facebook.com/FinanceDeptLviv",
         "date": "October 4",
         "time": "9:00-13:00",
-        "event": "Forum “Financial Sustainability and Economic Development of Communities”",
+        "event": "Forum «Financial Sustainability and Economic Development of Communities»",
         "description": "",
         "link": "https://drive.google.com/drive/folders/1dQwLI3dWoejwdbRuacuZxvR3HMK9OUNO?usp=sharing",
         "color": "default"
@@ -201,6 +201,6 @@
     "title": "Partners"
   },
   "contacts": {
-    "address": "79008, Львів, пл. Ринок, 1, каб. 108-111\n"
+    "address": "79008, Rynok Square, 1"
   }
 }

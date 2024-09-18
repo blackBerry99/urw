@@ -7,7 +7,7 @@
   },
   "banner": {
     "title": "Тиждень стійкості українських міст",
-    "subtitle": "16-20 вересня 2024, Львів",
+    "subtitle": "30 вересня — 4 жовтня 2024, Львів",
     "participateButton": "взяти участь"
   },
   "about": {
@@ -23,7 +23,7 @@
     "title": "Програма",
     "download": "Завантажити pdf програму",
     "downloadLink": "src/images/Resilience_week_timetable-UA.pdf",
-    "list":[
+    "list": [
       {
         "date": "30 вересня",
         "time": "14:00-17:00",
@@ -108,7 +108,7 @@
       {
         "date": "2 жовтня",
         "time": "18:00-20:00",
-        "event": "Публічна дискусія на тему стійкості: \"Палити чи не палити?\". Можливості та ризики термічної обробки відходів",
+        "event": "Публічна дискусія на тему стійкості: «Палити чи не палити?». Можливості та ризики термічної обробки відходів",
         "description": "",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLScFQkNxDotET9_mwhz5bBEo4isuXS0Fq98wxmI1jW_Coz-ANw/viewform?usp=sf_link",
         "color": "light-blue",
@@ -117,7 +117,7 @@
       {
         "date": "3 жовтня",
         "time": "9:00-18:00",
-        "event": "Форум \"Фінансова стійкість та економічний розвиток громад",
+        "event": "Форум «Фінансова стійкість та економічний розвиток громад»",
         "description": "Платформа обміну досвідом та думками щодо зміцнення фінансової основи місцевого самоврядування та стимулювання економічного розвитку міст.\n\nКращі європейські практики міст в сфері залучення додаткових джерел фінансування.",
         "link": "https://drive.google.com/drive/folders/1Q-MNF_MPpRUl2EuddhhHTnTDZKLBoLg1?usp=sharing",
         "color": "default",
@@ -153,7 +153,7 @@
       {
         "date": "4 жовтня",
         "time": "9:00-13:00",
-        "event": "Форум \"Фінансова стійкість та економічний розвиток громад",
+        "event": "Форум «Фінансова стійкість та економічний розвиток громад»",
         "description": "",
         "link": "https://drive.google.com/drive/folders/1Q-MNF_MPpRUl2EuddhhHTnTDZKLBoLg1?usp=sharing",
         "color": "default",

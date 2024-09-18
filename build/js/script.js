@@ -241,9 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '3.png',
       '4.png',
       '5.png',
-      '6.png',
       '7.svg',
-      '8.svg',
       '9.png',
       '10.jpg',
       '11.jpeg',
@@ -258,6 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
       '20.jpg',
       '21.jpg',
       '22.png',
+      '25.png',
+      '6.jpg',
     ];
 
     commonImages.forEach(image => {
@@ -278,7 +278,6 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 'auto',
         allowTouchMove: false,
         speed: 2000,
-        pauseOnMouseEnter: true,
         autoplay: {
           delay: 0,
         },
