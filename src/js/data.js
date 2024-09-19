@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const commonImages = [
       '23.jpg',
       '1.png',
-      '2.jpg',
+      '2-1.jpeg',
       '3.png',
       '4.png',
       '5.png',
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '9.png',
       '10.jpg',
       '11.jpeg',
-      '12.jpg',
+      '12-1.jpg',
       '13.png',
       '14.jpg',
       '15.png',

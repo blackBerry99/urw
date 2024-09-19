@@ -396,6 +396,9 @@ strong {
       object-fit: contain;
     }
   }
+  &__item:nth-child(3).swiper-slide {
+    width: 220px;
+  }
 }
 
 .footer {
