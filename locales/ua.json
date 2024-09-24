@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "Про подію",
-    "subtitle": "Вторгнення російських військ в Україну і вже другий рік повномасштабної війни стали потрясінням, яке потребує надзусиль на рівні місцевого самоврядування для ефективного реагування на військові загрози та адаптації систем життєзабезпечення до блекаутів та інших викликів. Стійкість громад — це здатність місцевого самоврядування, і мешканців виживати, адаптуватися та розвиватися, незалежно від того, яких довгострокових загроз вони зазнають.<br><br><strong>Ukrainian Resilience Week</strong> — це майданчик для експертних дискусій, надихаючих історій та просування інтересів місцевого самоврядування у формуванні стійкості."
+    "subtitle": "Вторгнення російських військ в Україну і вже третій рік повномасштабної війни стали потрясінням, яке потребує надзусиль на рівні місцевого самоврядування для ефективного реагування на військові загрози та адаптації систем життєзабезпечення до блекаутів та інших викликів. Стійкість громад — це здатність місцевого самоврядування, і мешканців виживати, адаптуватися та розвиватися, незалежно від того, яких довгострокових загроз вони зазнають.<br><br><strong>Ukrainian Resilience Week</strong> — це платформа для експертних дискусій, надихаючих історій та просування інтересів місцевого самоврядування у формуванні стійкості."
   },
   "events": {
     "title": "Заходи",
@@ -22,7 +22,7 @@
   "program":  {
     "title": "Програма",
     "download": "Завантажити pdf програму",
-    "downloadLink": "src/images/Resilience_week_timetable-UA.pdf",
+    "downloadLink": "src/images/Resilience_week_timetable(UA).pdf",
     "list": [
       {
         "date": "30 вересня",
@@ -30,8 +30,8 @@
         "event": "Виїзне засідання Комітету Верховної Ради України з питань енергетики та житлово-комунальних послуг",
         "description": "",
         "link": "",
-        "color": "",
-        "eventLink": ""
+        "color": "light-blue",
+        "eventLink": "https://kompek.rada.gov.ua/"
       },
       {
         "date": "1 жовтня",
@@ -71,8 +71,17 @@
       },
       {
         "date": "1 жовтня",
+        "time": "16:00-17:30",
+        "event": "Супутній онлайн-захід: «Стійкі міста України. Підтримка громад у плануванні стійкого розвитку»",
+        "description": "",
+        "link": "https://forms.gle/Hak9SXPtcsH7P6NW7",
+        "color": "",
+        "eventLink": "https://forms.gle/Hak9SXPtcsH7P6NW7"
+      },
+      {
+        "date": "1 жовтня",
         "time": "18:00-20:00",
-        "event": "Публічна дискусія на тему стійкості: Протидія дезінформації в енергетичному секторі",
+        "event": "Публічна дискусія на тему стійкості: «Протидія дезінформації в енергетичному секторі»",
         "description": "",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSf-fYy4q_CmvINj7qmDx_gYXadvx1YcDAaxxvuI6KzxRjqOaw/viewform?usp=sf_link",
         "color": "light-blue",
@@ -106,15 +115,6 @@
         "eventLink": "https://www.facebook.com/Lvivteploenergo"
       },
       {
-        "date": "2 жовтня",
-        "time": "18:00-20:00",
-        "event": "Публічна дискусія на тему стійкості: «Палити чи не палити? Можливості та ризики термічної обробки відходів»",
-        "description": "",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLScFQkNxDotET9_mwhz5bBEo4isuXS0Fq98wxmI1jW_Coz-ANw/viewform?usp=sf_link",
-        "color": "light-blue",
-        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLScFQkNxDotET9_mwhz5bBEo4isuXS0Fq98wxmI1jW_Coz-ANw/viewform?usp=sf_link"
-      },
-      {
         "date": "3 жовтня",
         "time": "9:00-18:00",
         "event": "Форум «Фінансова стійкість та економічний розвиток громад»",
@@ -135,7 +135,7 @@
       {
         "date": "3 жовтня",
         "time": "16:00-17:30",
-        "event": "Супутній онлайн-захід: Міська стійкість та інновації: Трансформація міст для сталого та безпечного майбутнього",
+        "event": "Супутній онлайн-захід: «Міська стійкість та інновації: Трансформація міст для сталого та безпечного майбутнього»",
         "description": "",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSfpvwUVnnmdg_6Xgqgr0yzdnx21O04to8dm8rsnC4THpbL7eg/viewform?usp=sf_link",
         "color": "light-blue",
@@ -143,12 +143,21 @@
       },
       {
         "date": "3 жовтня",
-        "time": "18:00-20:00",
-        "event": "Публічна дискусія на тему стійкості: «Сонце і вітер - крапля в морі?». Презентація дослідження Грінпіс про потенціал сонячної та вітрової енергії",
+        "time": "17:00-19:00",
+        "event": "Публічна дискусія на тему стійкості: «Сонце і вітер - крапля в морі? Презентація дослідження Грінпіс про потенціал сонячної та вітрової енергії»",
         "description": "",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSfD57zu3PFTooU3bZe4D63uitXk2hNUBE3NNGPGN7n_dbl2zQ/viewform?usp=sf_link",
         "color": "light-blue",
         "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfD57zu3PFTooU3bZe4D63uitXk2hNUBE3NNGPGN7n_dbl2zQ/viewform?usp=sf_link"
+      },
+      {
+        "date": "3 жовтня",
+        "time": "19:00-20:00",
+        "event": "Публічна дискусія на тему стійкості: «Палити чи не палити? Можливості та ризики термічної обробки відходів»",
+        "description": "",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScFQkNxDotET9_mwhz5bBEo4isuXS0Fq98wxmI1jW_Coz-ANw/viewform?usp=sf_link",
+        "color": "light-blue",
+        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLScFQkNxDotET9_mwhz5bBEo4isuXS0Fq98wxmI1jW_Coz-ANw/viewform?usp=sf_link"
       },
       {
         "date": "4 жовтня",
@@ -171,7 +180,7 @@
       {
         "date": "4 жовтня",
         "time": "11:00-12:30",
-        "event": "Супутній онлайн-захід: Нові підходи приєднання українських міст до Місцевого зеленого курсу ЄС",
+        "event": "Супутній онлайн-захід: «Локальний зелений курс ЄС для українських міст: презентація дорожньої карти від ІСLEI»",
         "description": "",
         "link": "https://forms.gle/6icsmuMVvzAU4Put6",
         "color": "light-blue",
@@ -180,11 +189,11 @@
       {
         "date": "4 жовтня",
         "time": "14:00-17:00",
-        "event": "Озеленення громад, вразливих до зміни клімату",
+        "event": "Відкрита подія: «Особливості озеленення громад, вразливих до зміни клімату»",
         "description": "",
-        "link": "",
-        "color": "",
-        "eventLink": ""
+        "link": "https://forms.gle/j4po966i82p6dEPf9",
+        "color": "light-blue",
+        "eventLink": "https://forms.gle/j4po966i82p6dEPf9"
       },
       {
         "date": "4 жовтня",

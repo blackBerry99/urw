@@ -200,10 +200,12 @@ strong {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 24px 24px; }
     .program__item-title {
       color: #0028FF;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      font-weight: 500; }
     .program__item-time {
       color: #0028FF;
-      margin: 24px 0; }
+      margin: 24px 0;
+      font-weight: 500; }
     .program__item-info, .program__item-desc {
       font-size: 16px; }
     .program__item-desc {

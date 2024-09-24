@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "About the event",
-    "subtitle": "The invasion of Russian troops into Ukraine and the second year of full-scale war have become a shock that requires extraordinary efforts at the local government level to effectively respond to military threats and adapt life support systems to blackouts and other challenges. Community resilience is the ability of local governments and residents to survive, adapt, and grow, regardless of the long-term threats they face. <br><br><strong> Ukrainian Resilience Week </strong>  is a platform for expert discussions, inspiring stories, and promoting the interests of local governance in building resilience."
+    "subtitle": "The invasion of Russian troops into Ukraine and the third year of full-scale war have become a shock that requires extraordinary efforts at the local government level to effectively respond to military threats and adapt life support systems to blackouts and other challenges. Community resilience is the ability of local governments and residents to survive, adapt, and grow, regardless of the long-term threats they face. <br><br><strong> Ukrainian Resilience Week </strong>  is a platform for expert discussions, inspiring stories, and promoting the interests of local governance in building resilience."
   },
   "events": {
     "title": "Events",
@@ -22,16 +22,16 @@
   "program":  {
     "title": "Program",
     "download": "Download pdf program",
-    "downloadLink": "src/images/Resilience_week_timetable-EN.pdf",
+    "downloadLink": "src/images/Resilience_week_timetable(EN).pdf",
     "list": [
       {
-        "eventLink": "",
+        "eventLink": "https://kompek.rada.gov.ua/",
         "date": "September 30",
         "time": "15:00-18:00",
         "event": "Offsite Meeting of the Verkhovna Rada Committee on Energy, Housing and Utilities",
         "description": "",
-        "link": "",
-        "color": ""
+        "link": "https://kompek.rada.gov.ua/",
+        "color": "light-blue"
       },
       {
         "eventLink": "",
@@ -66,14 +66,23 @@
         "time": "15:00-18:00",
         "event": "Heat Energy Forum",
         "description": "",
-        "link": "https://drive.google.com/drive/folders/1bSCTzUWt1h77Ay9AArscNr3ctFnLoF5o?usp=sharing",
+        "link": "https://drive.google.com/drive/folders/1VjmOPXk619luiaf4ig_5xgSM8-Rm1FbC?usp=sharing",
         "color": "orange"
+      },
+      {
+        "eventLink": "https://forms.gle/oCZo5zZD8UBgc5nZA",
+        "date": "October 1",
+        "time": "16:00-17:30",
+        "event": "Online side event: \"Resilient cities of Ukraine. Supporting communities in planning resilient development",
+        "description": "",
+        "link": "https://forms.gle/oCZo5zZD8UBgc5nZA",
+        "color": ""
       },
       {
         "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfWr0oowdgoczs4heBstyFuA9EatqmyEtW2VcTymfWsRkYiLw/viewform",
         "date": "October 1",
         "time": "18:00-20:00",
-        "event": "Public discussion on city resilience: Combating disinformation in the energy sector",
+        "event": "Public discussion on city resilience: \"Combating disinformation in the energy sector",
         "description": "",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSfWr0oowdgoczs4heBstyFuA9EatqmyEtW2VcTymfWsRkYiLw/viewform",
         "color": "light-blue"
@@ -102,17 +111,8 @@
         "time": "10:00-18:00",
         "event": "Heat Energy Forum",
         "description": "A platform for professional dialogue, exchange of experience, and knowledge sharing between experts, scientists, business representatives, and government authorities to ensure stable and reliable heat supply in Ukraine amidst the current challenges caused by Russian aggression.",
-        "link": "https://drive.google.com/drive/folders/1bSCTzUWt1h77Ay9AArscNr3ctFnLoF5o?usp=sharing",
+        "link": "https://drive.google.com/drive/folders/1VjmOPXk619luiaf4ig_5xgSM8-Rm1FbC?usp=sharing",
         "color": "orange"
-      },
-      {
-        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSeFQ3vRWCstgs00nRbN5RDURKWU2Vs2-eK2BNvqG0aUASZAlQ/viewform",
-        "date": "October 2",
-        "time": "18:00-20:00",
-        "event": "Public discussion on city resilience: Opportunities and risks of thermal treatment of waste",
-        "description": "",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeFQ3vRWCstgs00nRbN5RDURKWU2Vs2-eK2BNvqG0aUASZAlQ/viewform",
-        "color": "light-blue"
       },
       {
         "eventLink": "https://www.facebook.com/FinanceDeptLviv",
@@ -136,7 +136,7 @@
         "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLScr7kDkluL5W3TD--bLyS4b0VRPVf0ujKQVYdZbVpzjCD-V5Q/viewform?usp=sf_link",
         "date": "October 3",
         "time": "16:00-17:30",
-        "event": "Online side event: Urban Resilience and Innovation: Transforming Cities for Sustainable and Secure Future",
+        "event": "Online side event: \"Urban Resilience and Innovation: Transforming Cities for Sustainable and Secure Future",
         "description": "",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLScr7kDkluL5W3TD--bLyS4b0VRPVf0ujKQVYdZbVpzjCD-V5Q/viewform?usp=sf_link",
         "color": "light-blue"
@@ -144,10 +144,19 @@
       {
         "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLScVPYWM-xlcM9Jk8PeEMPBUvQYYa0S7hmulC7lzvTX92wFB3w/viewform",
         "date": "October 3",
-        "time": "18:00-20:00",
-        "event": "Public discussion on city resilience: «Sun and wind - a drop in the ocean?». Presentation of GREENPEACE research on the potential of solar and wind energy",
+        "time": "17:00-19:00",
+        "event": "Public discussion on city resilience: \"Sun and wind - a drop in the ocean? Presentation of GREENPEACE research on the potential of solar and wind energy",
         "description": "",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLScVPYWM-xlcM9Jk8PeEMPBUvQYYa0S7hmulC7lzvTX92wFB3w/viewform",
+        "color": "light-blue"
+      },
+      {
+        "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSeFQ3vRWCstgs00nRbN5RDURKWU2Vs2-eK2BNvqG0aUASZAlQ/viewform",
+        "date": "October 3",
+        "time": "19:00-20:00",
+        "event": "Public discussion on city resilience: Opportunities and risks of thermal treatment of waste",
+        "description": "",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeFQ3vRWCstgs00nRbN5RDURKWU2Vs2-eK2BNvqG0aUASZAlQ/viewform",
         "color": "light-blue"
       },
       {
@@ -172,19 +181,19 @@
         "eventLink": "https://forms.gle/DLTV73VHkRZKfDpf6",
         "date": "October 4",
         "time": "11:00-12:30",
-        "event": "Online side event: New approach for association of Ukrainian cities wuth the EU Local Green Deal",
+        "event": "Online side event: \"EU LGD for Ukrainian cities: ICLEI Roadmap approach presentation",
         "description": "",
         "link": "https://forms.gle/DLTV73VHkRZKfDpf6",
         "color": "light-blue"
       },
       {
-        "eventLink": "",
+        "eventLink": "https://forms.gle/SHV57JQQfZqDkfdx8",
         "date": "October 4",
         "time": "14:00-17:00",
-        "event": "Greening communities vulnerable to climate change",
+        "event": "Public event: “Peculiarities of greening communities vulnerable to climate change”",
         "description": "",
-        "link": "",
-        "color": ""
+        "link": "https://forms.gle/SHV57JQQfZqDkfdx8",
+        "color": "light-blue"
       },
       {
         "eventLink": "",

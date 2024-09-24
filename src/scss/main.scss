@@ -238,10 +238,12 @@ strong {
     &-title {
       color: #0028FF;
       text-transform: capitalize;
+      font-weight: 500;
     }
     &-time {
       color: #0028FF;
       margin: 24px 0;
+      font-weight: 500;
     }
     &-info, &-desc {
       font-size: 16px;

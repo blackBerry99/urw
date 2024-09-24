@@ -196,7 +196,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Object.values(groupedEvents).forEach(group => {
       group.dates.sort((a, b) => new Date(a) - new Date(b));
-      const dateRange = group.dates.length > 1 ? `${group.dates[0]} - ${group.dates[group.dates.length - 1]}` : group.dates[0];
+
+      const dateRange = group.dates.length > 1 && group.dates[0].split(' ')[1] === group.dates[group.dates.length - 1].split(' ')[1]
+        ? `${group.dates[0].split(' ')[0]}-${group.dates[group.dates.length - 1]}`
+        : `${group.dates[0]}`;
 
       const eventItem = document.createElement('a');
       eventItem.className = `events__item ${group.color}`;
@@ -251,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '15.png',
       '16.png',
       '17.png',
-      '18.png',
+      '18-1.jpg',
       '19.png',
       '20.jpg',
       '21.jpg',

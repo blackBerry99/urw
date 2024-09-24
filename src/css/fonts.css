@@ -45,3 +45,13 @@
     font-weight: 900;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Ukraine';
+    font-display: swap;
+    src: url("../../../src/fonts/e-UkraineHead-Medium.eot");
+    src: local("UkraineHead"), local("UkraineHead"),
+    url("../../../src/fonts/e-UkraineHead-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
