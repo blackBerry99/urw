@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '23.jpg',
       '1.png',
       '2-1.jpeg',
-      '3.png',
+      '3-1.png',
       '4.png',
       '5.png',
       '7.svg',
