@@ -261,6 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '22.png',
       '25.png',
       '6.jpg',
+      '26.png',
     ];
 
     commonImages.forEach(image => {
