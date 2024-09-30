@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentLanguage = 'ua';
 
   function loadTranslations(language) {
-    fetch(`../locales/${language}.json`)
+    fetch(`../locales/${language}-1.json`)
       .then(response => response.json())
       .then(data => {
         updateText(data);
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.banner__title').textContent = t.banner.title;
     document.querySelector('.banner__subtitle').textContent = t.banner.subtitle;
-    // document.querySelector('.mob__btn').textContent = t.banner.participateButton;
+    const mobBtn = document.querySelector('.mob__btn');
     document.querySelector('.about__title').textContent = t.about.title;
     document.querySelector('.about__subtitle').innerHTML = t.about.subtitle;
 
@@ -53,18 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.partners__title').textContent = t.partners.title;
     const bannerBtn = document.querySelector('.banner__btn');
     bannerBtn.textContent = t.banner.participateButton;
+    bannerBtn.href = t.program.downloadLink;
+    bannerBtn.target = '_blank';
 
-    bannerBtn.addEventListener('click', function(event) {
-      event.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
+    mobBtn.textContent = t.banner.participateButton;
+    mobBtn.href = t.program.downloadLink;
+    mobBtn.target = '_blank';
   }
 
   const navLinks = document.querySelectorAll('.header__nav a, .footer__nav a');

@@ -442,6 +442,7 @@ strong {
     background: #00FAAC;
     color: #24009C;
     width: fit-content;
+    text-decoration: none;
     margin: 72px auto 32px; }
     .mob__btn:hover {
       background: #02eca4;
